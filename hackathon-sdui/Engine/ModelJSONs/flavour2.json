@@ -1,0 +1,327 @@
+{
+    "id": "screen",
+    "type": "vContainer",
+    "children": [
+        {
+            "id": "logo",
+            "type": "image",
+            "link": "priceline_logo",
+            "properties": {
+                "size": {
+                    "width": 103,
+                    "height": 24.0
+                },
+                "alignment": "center",
+                "foregroundColor": "#2B66E7"
+            }
+        },
+        {
+            "id": "searchForm",
+            "type": "vContainer",
+            "children": [
+                {
+                    "id": "maps",
+                    "type": "image",
+                    "link": "map",
+                    "allowedActions": [
+                        {
+                            "type": "tap",
+                            "deeplink": "negotiator://homepage"
+                        }
+                    ],
+                    "properties": {
+                        "isTapabble": true,
+                        "isNetworkLoadable": false,
+                        "size": {
+                            "height": 100.0
+                        },
+                        "radius": 8
+                    }
+                },
+                {
+                    "id": "locationPicker",
+                    "type": "selectionPicker",
+                    "placeHolder": "Choose a location",
+                    "leftIcon": {
+                        "id": "searchIcon",
+                        "type": "image",
+                        "link": "searchIcon",
+                        "properties": {
+                            "isTapabble": true,
+                            "isNetworkLoadable": false,
+                            "size": {
+                                "height": 16.0,
+                                "width": 16.0
+                            }
+                        }
+                    },
+                    "rightIcon": {
+                        "id": "locationIcon",
+                        "type": "image",
+                        "link": "locationIcon",
+                        "properties": {
+                            "isTapabble": true,
+                            "isNetworkLoadable": false,
+                            "size": {
+                                "height": 16.0,
+                                "width": 16.0
+                            }
+                        }
+                    },
+                    "allowedActions": [
+                        {
+                            "type": "tap"
+                        }
+                    ],
+                    "properties": {
+                        "isTapabble": true,
+                        "font": {
+                            "size": 16,
+                            "type": "medium"
+                        },
+                        "foregroundColor": "#000000",
+                        "backgroundColor": "#F2F2F2",
+                        "size": {
+                            "height": 50.0
+                        },
+                        "radius": 8
+                    }
+                },
+                {
+                    "id": "datePicker",
+                    "type": "selectionPicker",
+                    "placeHolder": "Choose a date",
+                    "leftIcon": {
+                        "id": "calendarIcon",
+                        "type": "image",
+                        "link": "calendarIcon",
+                        "properties": {
+                            "isTapabble": true,
+                            "isNetworkLoadable": false,
+                            "size": {
+                                "height": 16.0,
+                                "width": 16.0
+                            }
+                        }
+                    },
+                    "allowedActions": [
+                        {
+                            "type": "tap"
+                        }
+                    ],
+                    "properties": {
+                        "isTapabble": true,
+                        "font": {
+                            "size": 16,
+                            "type": "medium"
+                        },
+                        "foregroundColor": "#000000",
+                        "backgroundColor": "#F2F2F2",
+                        "size": {
+                            "height": 50.0
+                        },
+                        "radius": 8
+                    }
+                },
+                {
+                    "id": "searchButton",
+                    "type": "button",
+                    "title": "Search Hotels",
+                    "properties": {
+                        "isTapabble": true,
+                        "font": {
+                            "size": 16,
+                            "type": "bold"
+                        },
+                        "foregroundColor": "#FFFFFF",
+                        "backgroundColor": "#2B66E7",
+                        "size": {
+                            "height": 50.0
+                        },
+                        "radius": 8
+                    }
+                }
+            ],
+            "properties": {
+                "interItemSpacing": 8,
+                "backgroundColor": "#FFFFFF",
+                "padding": {
+                    "left": 8,
+                    "right": 8
+                },
+                "radius": 16,
+                "renderType": "card"
+            }
+        },
+        {
+            "id": "vipBanner",
+            "type": "hContainer",
+            "children": [
+                {
+                    "id": "vipTierImage",
+                    "type": "image",
+                    "link": "VIP-logo-lg",
+                    "properties": {
+                        "isTapabble": false,
+                        "isNetworkLoadable": false,
+                        "size": {
+                            "width": 56,
+                            "height": 56
+                        },
+                        "padding": {
+                            "left": 16
+                        }
+                    }
+                },
+                {
+                    "id": "details",
+                    "type": "vContainer",
+                    "children": [
+                        {
+                            "id": "vipBannerTitle",
+                            "type": "text",
+                            "text": "Become a priceline VIP",
+                            "properties": {
+                                "font": {
+                                    "size": 19,
+                                    "type": "bold"
+                                },
+                                "foregroundColor": "#000000",
+                                "padding": {
+                                    "left": 16,
+                                    "right": 16
+                                }
+                            }
+                        },
+                        {
+                            "id": "vipBannerDetail",
+                            "type": "text",
+                            "text": "Login or signup for free to unlock incredible deals and benefits.",
+                            "properties": {
+                                "font": {
+                                    "size": 15,
+                                    "type": "regular"
+                                },
+                                "foregroundColor": "#000000",
+                                "padding": {
+                                    "left": 16,
+                                    "right": 16
+                                }
+                            }
+                        },
+                        {
+                            "id": "loginButton",
+                            "type": "button",
+                            "title": "Sign Up",
+                            "properties": {
+                                "deeplink": "pclnnegotiator://signup",
+                                "isTapabble": true,
+                                "font": {
+                                    "size": 14,
+                                    "type": "bold"
+                                },
+                                "foregroundColor": "#007AFF",
+                                "titleAlignment": "left",
+                                "padding": {
+                                    "left": 16,
+                                    "right": 16
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "padding": {
+                            "top": 8,
+                            "bottom": 8
+                        },
+                        "interItemSpacing": 4,
+                        "alignment": "left",
+                        "isTapabble": false,
+                        "isNetworkLoadable": false
+                    }
+                }
+            ],
+            "properties": {
+                "isTapabble": true,
+                "isNetworkLoadable": false,
+                "backgroundColor": "#FFFFFF",
+                "radius": 8,
+                "padding": {
+                    "left": 8,
+                    "right": 8
+                },
+                "renderType": "card"
+            }
+        },
+        {
+            "id": "marketing_banner",
+            "type": "vContainer",
+            "allowedActions": [
+                {
+                    "type": "tap",
+                    "deeplink": "negotiator://experiences?title=Experiences"
+                }
+            ],
+            "children": [
+                {
+                    "id": "bannerTitle",
+                    "type": "text",
+                    "text": "Experiences by Priceline",
+                    "properties": {
+                        "font": {
+                            "size": 20,
+                            "type": "bold"
+                        },
+                        "foregroundColor": "#2B66E7"
+                    }
+                },
+                {
+                    "id": "logo",
+                    "type": "image",
+                    "link": "https://iili.io/HU70sUP.jpg",
+                    "properties": {
+                        "isNetworkLoadable": true,
+                        "size": {
+                            "height": 100.0
+                        },
+                        "alignment": "center"
+                    }
+                },
+                {
+                    "id": "bannerDetail",
+                    "type": "text",
+                    "text": "Explore Experiences by Priceline.",
+                    "properties": {
+                        "font": {
+                            "size": 15,
+                            "type": "regular"
+                        },
+                        "foregroundColor": "#000000"
+                    }
+                }
+            ],
+            "properties": {
+                "interItemSpacing": 8,
+                "size": {
+                    "width": 103,
+                    "height": 24.0
+                },
+                "alignment": "center",
+                "backgroundColor": "#FFFFFF",
+                "radius": 16,
+                "padding": {
+                    "left": 8,
+                    "right": 8
+                },
+                "renderType": "card"
+            }
+        }
+    ],
+    "properties": {
+        "scrollEnabled": true,
+        "interItemSpacing": 16,
+        "padding": {
+            "top": 16
+        }
+    }
+}
